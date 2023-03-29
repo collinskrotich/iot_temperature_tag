@@ -23,7 +23,7 @@ const Sidebar = ({ children }) => {
                 <Link href ='/' >
                     <div className='bg-green-600 text-white p-3 mt-8 rounded-lg inline-block' >
                         <RxDashboard size = '40'/>
-                        Temp
+                        Home
                     </div>
                 </Link>
 

@@ -1,9 +1,51 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend } from "chart.js";
+import { Bar } from 'react-chartjs-2';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend);
 
 const BarChart = () => {
+    const [chartData, setChartData] = useState({
+        datasets: [],
+    });
+
+    const [chartOptions, setChartOptions] = useState({});
+
+    useEffect(() => {
+        setChartData({
+            labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
+            datasets: [
+                {
+                    label: 'Daily Temperature Readings',
+                    data: [19, 23, 24, 17, 18, 25, 28],
+                    borderColor: 'rgb(53, 162, 235)',
+                    backgroundColor: 'rgb(53, 162,235, 0.4)',
+                },
+            ]
+        })
+        setChartOptions({
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Daily temperature readings'
+                }
+            },
+            maintainAspectratio: false,
+            responsive: true
+        })
+    }, 
+    [])
+
   return (
-    <div>BarChart</div>
+    <div className='w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white'>
+        <Bar data={chartData} options={chartOptions} />
+        </div>
   )
 }
+
+
 
 export default BarChart
