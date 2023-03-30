@@ -28,14 +28,14 @@ const readings = () => {
                             </div>
                             <div className='pl-4'>
                                 <p className='text-gray-800 font-bold'>{order.temp.toLocaleString()}</p>
-                                <p className='text-gray-800 text-sm'>{order.name.first}</p>
+                                <p className='text-gray-800 text-sm'>{order.name.first + ' ' + order.name.last}</p>
                             </div>
                         </div>
                         <p className='text-gray-600 sm:text-left text-right'>
                             <span className={
-                                order.status == 'Processing'
+                                order.status == 'Humidity'
                                 ? 'bg-green-200 p-2 rounded-lg'
-                                : order.status == 'Completed'
+                                : order.status == 'Temperature'
                                 ? 'bg-blue-200 p-2 rounded-lg'
                                 : 'bg-yellow-200 p-2 rounded-lg'
                             }

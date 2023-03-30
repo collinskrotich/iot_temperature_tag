@@ -23,12 +23,12 @@ const Users = () => {
                             <div className='bg-green-600 p-3 rounded-lg'>
                                 <BsPersonFill className='text-white'/>
                             </div>
-                            <p className='pl-4'>{order.name.first + '' + order.name.last}</p>
+                            <p className='pl-4'>{order.name.first + ' ' + order.name.last}</p>
                         </div>
                         <p className='text-gray-600 sm:text-left text-right'>{order.name.first}@gmail.com</p>
                         <p className='hidden md:flex'>{order.date}</p>
                         <div className='sm:flex hidden justify-between items-center'>
-                            <p>{order.temp}</p>
+                            <p>{order.deviceID}</p>
                             <BsThreeDotsVertical/>
                         </div>
                     </li>
