@@ -44,7 +44,7 @@ const readings = () => {
                         </p>
                         <p className='hidden md:flex'>{order.date}</p>
                         <div className='sm:flex hidden justify-between items-center'>
-                            <p>{order.temp}</p>
+                            <p>{order.deviceID}</p>
                             <BsThreeDotsVertical />
                         </div>
 
