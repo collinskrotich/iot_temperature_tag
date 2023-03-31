@@ -19,7 +19,7 @@ export default function Home() {
 
         <Header />
         <TopCards />
-        <div className='px-12 grid md:grid-cols-3 grid-cols-1 gap-4'>
+        <div className='px-20 grid md:grid-cols-3 grid-cols-1 gap-4'>
           <BarChart />
           <Recents />
         </div>
