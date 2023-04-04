@@ -2,7 +2,7 @@ export const data = [
     {
         id: 1,
         name: {
-            first: 'Ngong',
+            first: 'Kinale',
             last: 'Forest',
         },
         temp: '24 °C',
@@ -13,7 +13,7 @@ export const data = [
     {
         id: 2,
         name: {
-            first: 'Karura',
+            first: 'Kinale',
             last: 'Forest',
         },
         temp: '78%',
@@ -24,7 +24,7 @@ export const data = [
     {
         id: 3,
         name: {
-            first: 'Kereita',
+            first: 'Kinale',
             last: 'Forest',
         },
         temp: '12',
@@ -35,7 +35,7 @@ export const data = [
     {
         id: 4,
         name: {
-            first: 'Arabuko-Sokoke',
+            first: 'Kinale',
             last: 'Forest',
         },
         temp: '13 °C',
@@ -46,8 +46,8 @@ export const data = [
     {
         id: 5,
         name: {
-            first: 'Kakamega',
-            last: 'Forest National Reserve',
+            first: 'Kinale',
+            last: 'Forest',
         },
         temp: '20 dB',
         status: 'Noise Levels',
@@ -57,7 +57,7 @@ export const data = [
     {
         id: 6,
         name: {
-            first: 'Loita',
+            first: 'Kinale',
             last: 'Forest',
         },
         temp: '17 °C',
@@ -68,7 +68,7 @@ export const data = [
     {
         id: 7,
         name: {
-            first: 'Malava',
+            first: 'Kinale',
             last: 'Forest',
         },
         temp: '940 mbar',
@@ -79,7 +79,7 @@ export const data = [
     {
         id: 8,
         name: {
-            first: 'Mau',
+            first: 'Kinale',
             last: 'Forest',
         },
         temp: '7 °C',
@@ -90,8 +90,8 @@ export const data = [
     {
         id: 9,
         name: {
-            first: 'Ol Doinyo',
-            last: 'Orok',
+            first: 'Kinale',
+            last: 'Forest',
         },
         temp: '54%',
         status: 'Humidity',
@@ -101,8 +101,8 @@ export const data = [
     {
         id: 10,
         name: {
-            first: 'Elmentaita',
-            last: 'Badlands',
+            first: 'Kinale',
+            last: 'Forest',
         },
         temp: '15',
         status: 'UV Index',

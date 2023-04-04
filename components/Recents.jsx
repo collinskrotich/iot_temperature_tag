@@ -21,9 +21,9 @@ const Recents = () => {
                         <p className='text-blue-300 text-sm'>{order.status}</p>
 
                     </div>
-                    <p className='lg:flex md:hidden absolute right-6 text-sm'>
+                    {/* <p className='lg:flex md:hidden absolute right-6 text-sm'>
                         {order.date}
-                    </p>
+                    </p> */}
                 </li>
             ))}
         </ul>

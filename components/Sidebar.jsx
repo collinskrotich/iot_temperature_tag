@@ -15,10 +15,10 @@ const Sidebar = ({ children }) => {
         <div className='fixed w-90 h-screen p-3 bg-white border-r-[1px] flex flex-col justify-between'>
             <div className='flex flex-col items-center'>
                 <div>
-                    <img className='pb-6'src='/../saf-logo.png' alt='safaricom-logo' width='125' height='140'>                                   
+                    <img className='pb-6'src='/../saf-logo.png' alt='safaricom-logo' width='125' height='160'>                                   
                     </img>                  
                     </div>  
-               
+            4
                 <Link href ='/'>
                     <div className='bg-gray-400 text-white p-3 rounded-lg inline-block'>
                         <GiIceCube size = '60'/>
