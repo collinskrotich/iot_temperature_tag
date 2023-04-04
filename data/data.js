@@ -9,6 +9,7 @@ export const data = [
         status: 'Temperature',
         date: '1 Minutes ago',
         deviceID: 'T83623',
+        county: 'Kiambu County',
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ export const data = [
         status: 'Humidity',
         date: '3 Minutes ago',
         deviceID: 'H23098',
+        county: 'Kiambu County',
     },
     {
         id: 3,
@@ -31,6 +33,7 @@ export const data = [
         status: 'Air Quality Index',
         date: '12 Minutes ago',
         deviceID: 'A39806',
+        county: 'Kiambu County',
     },
     {
         id: 4,
@@ -42,6 +45,7 @@ export const data = [
         status: 'Temperature',
         date: '7 Minutes ago',
         deviceID: 'T35276',
+        county: 'Kiambu County',
     },
     {
         id: 5,
@@ -50,9 +54,10 @@ export const data = [
             last: 'Forest',
         },
         temp: '20 dB',
-        status: 'Noise Levels',
+        status: 'Sound Levels',
         date: '28 Minutes ago',
         deviceID: 'N90827',
+        county: 'Kiambu County',
     },
     {
         id: 6,
@@ -64,6 +69,7 @@ export const data = [
         status: 'Temperature',
         date: '45 Seconds ago',
         deviceID: 'T19563',
+        county: 'Kiambu County',
     },
     {
         id: 7,
@@ -75,6 +81,7 @@ export const data = [
         status: 'Pressure',
         date: '28 Seconds ago',
         deviceID: 'P96546',
+        county: 'Kiambu County',
     },
     {
         id: 8,
@@ -86,6 +93,7 @@ export const data = [
         status: 'Temperature',
         date: '28 Minutes ago',
         deviceID: 'T48167',
+        county: 'Kiambu County',
     },
     {
         id: 9,
@@ -97,6 +105,7 @@ export const data = [
         status: 'Humidity',
         date: '34 seconds ago',
         deviceID: 'H21090',
+        county: 'Kiambu County',
     },
     {
         id: 10,
@@ -108,6 +117,7 @@ export const data = [
         status: 'UV Index',
         date: '28 Seconds ago',
         deviceID: 'U88780',
+        county: 'Kiambu County',
     },
 
 ]

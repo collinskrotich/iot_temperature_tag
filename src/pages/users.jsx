@@ -25,7 +25,7 @@ const Users = () => {
                             </div>
                             <p className='pl-4'>{order.name.first + ' ' + order.name.last}</p>
                         </div>
-                        <p className='text-gray-600 sm:text-left text-right'>{order.name.first}@gmail.com</p>
+                        <p className='text-gray-600 sm:text-left text-right'>{order.county}</p>
                         <p className='hidden md:flex'>{order.date}</p>
                         <div className='sm:flex hidden justify-between items-center'>
                             <p>{order.deviceID}</p>
