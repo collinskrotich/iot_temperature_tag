@@ -18,7 +18,7 @@ const Sidebar = ({ children }) => {
                     <img className='pb-6'src='/../saf-logo.png' alt='safaricom-logo' width='125' height='160'>                                   
                     </img>                  
                     </div>  
-            4
+            
                 <Link href ='/'>
                     <div className='bg-gray-400 text-white p-3 rounded-lg inline-block'>
                         <GiIceCube size = '60'/>
