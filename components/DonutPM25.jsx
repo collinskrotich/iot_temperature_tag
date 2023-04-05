@@ -19,7 +19,7 @@ const DonutPM25 = () => {
                     label: 'PM-25 Air Quality Reading',
                     data: [30, 5],
                     borderColor: 'rgb(53, 162, 235)',
-                    backgroundColor: ['green', '#FFC700'],
+                    backgroundColor: ['#63BB71', '#FFC700'],
                     circumference: 240,
                     rotation: 240,
                 },
