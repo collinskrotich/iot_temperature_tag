@@ -37,6 +37,12 @@ const readings = () => {
                                 ? 'bg-green-200 p-2 rounded-lg'
                                 : order.status == 'Temperature'
                                 ? 'bg-blue-200 p-2 rounded-lg'
+                                : order.status == 'CO Reading'
+                                ? 'bg-pink-500 p-2 rounded-lg'
+                                : order.status == 'PM2.5 Reading'
+                                ? 'bg-gray-300 p-2 rounded-lg'
+                                : order.status == 'UV Index'
+                                ? 'bg-lime-100 p-2 rounded-lg'
                                 : 'bg-yellow-200 p-2 rounded-lg'
                             }
                             >{order.status}

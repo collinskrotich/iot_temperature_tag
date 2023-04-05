@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import BarChart from '../../components/BarChart';
+import LineChart from '../../components/LineChart';
+
 
 import Header from '../../components/Header';
 import Recents from '../../components/Recents';
 import TopCards from '../../components/TopCards';
+import Donut from '../../components/DonutPM25';
 
 export default function Home() {
   return (
@@ -19,8 +22,8 @@ export default function Home() {
 
         <Header />
         <TopCards />
-        <div className='px-20 grid md:grid-cols-3 grid-cols-1 gap-4'>
-          <BarChart />
+        <div className='px-20 grid md:grid-cols-3 grid-cols-1 gap-2'>
+          <LineChart />
           <Recents />
         </div>
         

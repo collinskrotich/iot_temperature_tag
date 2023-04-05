@@ -1,5 +1,78 @@
 export const data = [
     {
+        id: 11,
+        name: {
+            first: 'Kinale',
+            last: 'Forest',
+        },
+        temp: '68%',
+        status: 'Humidity',
+        date: '28 Seconds ago',
+        deviceID: 'U88780',
+        county: 'Kiambu County',
+    },
+    {
+        id: 12,
+        name: {
+            first: 'Kinale',
+            last: 'Forest',
+        },
+        temp: '134',
+        status: 'CO2 levels',
+        date: '28 Seconds ago',
+        deviceID: 'U88780',
+        county: 'Kiambu County',
+    },
+    {
+        id: 13,
+        name: {
+            first: 'Kinale',
+            last: 'Forest',
+        },
+        temp: '34',
+        status: 'PM2.5 Reading',
+        date: '28 Seconds ago',
+        deviceID: 'U88780',
+        county: 'Kiambu County',
+    },
+    {
+        id: 14,
+        name: {
+            first: 'Kinale',
+            last: 'Forest',
+        },
+        temp: '15',
+        status: 'CO Reading',
+        date: '28 Seconds ago',
+        deviceID: 'U88780',
+        county: 'Kiambu County',
+    },
+    {
+        id: 15,
+        name: {
+            first: 'Kinale',
+            last: 'Forest',
+        },
+        temp: '15',
+        status: 'UV Index',
+        date: '28 Seconds ago',
+        deviceID: 'U88780',
+        county: 'Kiambu County',
+    },
+    {
+        id: 16,
+        name: {
+            first: 'Kinale',
+            last: 'Forest',
+        },
+        temp: '15',
+        status: 'Air Quality Index',
+        date: '28 Seconds ago',
+        deviceID: 'U88780',
+        county: 'Kiambu County',
+    },
+
+    {
         id: 1,
         name: {
             first: 'Kinale',

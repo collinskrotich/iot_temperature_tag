@@ -17,13 +17,11 @@ const Recents = () => {
 
                     <div className='pl-4'>
                         <p className='text-gray-800 font-bold'>{order.temp}</p>
-                        <p className='text-gray-400 text-sm'>{order.name.first + ' ' + order.name.last}</p>
-                        <p className='text-blue-300 text-sm'>{order.status}</p>
+                        <p className='text-red-400 text-sm'>{order.status}</p>
 
                     </div>
-                    {/* <p className='lg:flex md:hidden absolute right-6 text-sm'>
-                        {order.date}
-                    </p> */}
+                    <p className='lg:flex md:hidden absolute right-6 text-green-600 text-sm'>{order.name.first + ' ' + order.name.last}</p>
+                    
                 </li>
             ))}
         </ul>
