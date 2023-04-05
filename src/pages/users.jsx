@@ -12,7 +12,7 @@ const Users = () => {
         <div className='w-full m-auto px-10 border rounded-lg bg-white overflow-y-auto'>
             <div className='my-3 py-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
                 <span className='px-20'>Name</span>
-                <span className='sm:text-left text-right'>Email</span>
+                <span className='sm:text-left text-right'>County</span>
                 <span className='hidden md:grid'>Last Reading</span>
                 <span className='hidden sm:grid'>Device</span>
             </div>
