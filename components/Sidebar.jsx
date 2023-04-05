@@ -49,7 +49,7 @@ const Sidebar = ({ children }) => {
 
 
 
-                <Link href ='/' >
+                <Link href ='/maps' >
                     <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
                         <TbMapPins size = '60'/>
                         Map
