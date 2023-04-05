@@ -14,10 +14,10 @@ const readings = () => {
         <div className='px-20'>
             <div className='w-full m-auto p-2 border rounded-lg bg-white overflow-y-auto'>
                 <div className='my-3 py-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
-                    <span>Reading</span>
-                    <span className='sm:text-left text-right'>Status</span>
-                    <span className='hidden md:grid'>Last Reading</span>
-                    <span className='hidden sm:grid'>Device</span>
+                    <span className='font-bold'>Reading</span>
+                    <span className='sm:text-left text-right font-bold'>Status</span>
+                    <span className='hidden md:grid font-bold'>Last Reading</span>
+                    <span className='hidden sm:grid font-bold'>Device</span>
                 </div>
                 <ul>
                     {data.map((order, id) => (
