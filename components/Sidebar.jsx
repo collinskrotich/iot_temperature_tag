@@ -56,7 +56,7 @@ const Sidebar = ({ children }) => {
                     </div>
                 </Link>
 
-                <Link href ='/' >
+                <Link href ='/temptag' >
                     <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
                         <FiSettings size = '60'/>
                     </div>
