@@ -5,13 +5,10 @@ export default function App() {
     const [dataa, setDataa] = useState([])
 
     useEffect(() => {
-        axios.get('api/payload')
+        axios.get('/api/payload')
         .then((result) => {
             console.log("Getting data from server ::::",result.data[0].payload)
-            setDataa(result.data)  
-
-              const payloadData = result.data; 
-                console.log("payload data",payloadData);
+            setDataa(result.data)
 
         }).catch((err) => {
             console.log(err)
