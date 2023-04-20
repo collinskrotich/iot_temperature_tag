@@ -9,11 +9,10 @@ AWS.config.update({
 });
 
 const dynamoClient = new AWS.DynamoDB.DocumentClient();
-const TABLE_NAME = "airqualitydb"
 
 const getPayload = async () => {
     const params = {
-        TableName: TABLE_NAME
+        TableName: process.env.AWS_TABLE_NAME
     };
     const payload = await dynamoClient.scan(params).promise();
     const payloadData = payload.Items
