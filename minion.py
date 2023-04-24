@@ -48,7 +48,7 @@ print("Connected")
 #Loop until terminated
 while True:
     send()
-    time.sleep(5)
+    time.sleep(50)
 
 mqttc.disconnect()
 
