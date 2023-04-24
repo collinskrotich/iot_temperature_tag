@@ -19,5 +19,14 @@ const nextConfig = {
   
 };
 
-module.exports = nextConfig;
+module.exports =   {
+  env: {
+    AWS_ACCCESS_KEY_ID:AKIAZSAW76WPCTWZNBY7,
+    AWS_SECRET_ACCESS_KEY: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,
+    AWS_REGION:us-east-1,
+    AWS_TABLE_NAME:airqualitydb,
+    AWS_SDK_LOAD_CONFIG:1
+},
+nextConfig
+}
 
