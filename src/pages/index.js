@@ -6,8 +6,9 @@ import LineChart from '../../components/LineChart';
 
 import Header from '../../components/Header';
 import Recents from '../../components/Recents';
-import TopCards from '../../components/TopCards';
+import SummaryCards from '../../components/SummaryCards';
 import Donut from '../../components/DonutPM25';
+import Googlemap from '../../components/Googlemap';
 
 export default function Home() {
   return (
@@ -21,9 +22,10 @@ export default function Home() {
       <main className='bg-gray-100 min-h-screen'>
 
         <Header />
-        <TopCards />
+        <SummaryCards/>
+
         <div className='px-20 grid md:grid-cols-3 grid-cols-1 gap-2'>
-          <LineChart />
+          <Googlemap />
           <Recents />
         </div>
         

@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className='flex justify-between px-20 pt-4'>
-        <h2 className='text-xl'>Air Quality Environmental Monitoring Dashboard</h2>
+        <h2 className='text-xl'>Temperature Tag Dashboard</h2>
         <div className="flex flex-row">
         <div className='pt-1 pr-2'><h2>Welcome back, Ayan</h2></div>
         <div className='relative'>

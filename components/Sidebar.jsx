@@ -25,6 +25,7 @@ const Sidebar = ({ children }) => {
                         IOT Cube
                     </div>
                 </Link>
+                
                 <span className='border-b-[2px] border-gray-200 w-full py-2'></span>
                 <Link href ='/' >
                     <div className='bg-green-600 text-white p-4 mt-8 rounded-lg inline-block' >
@@ -33,7 +34,7 @@ const Sidebar = ({ children }) => {
                     </div>
                 </Link>
 
-                <Link href ='/readings' >
+                {/* <Link href ='/readings' >
                     <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
                         <FaTemperatureLow size = '60'/>
                         Readings
@@ -45,11 +46,11 @@ const Sidebar = ({ children }) => {
                         <MdForest size = '60'/>
                         Regions
                     </div>
-                </Link>
+                </Link> */}
 
 
 
-                <Link href ='/maps' >
+                {/* <Link href ='/maps' >
                     <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
                         <TbMapPins size = '60'/>
                         Map
@@ -60,7 +61,7 @@ const Sidebar = ({ children }) => {
                     <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
                         <FiSettings size = '60'/>
                     </div>
-                </Link>
+                </Link> */}
 
 
             </div>

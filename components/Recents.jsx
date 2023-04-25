@@ -4,7 +4,7 @@ import {HiOutlineBellAlert} from 'react-icons/hi2'
 
 const Recents = () => {
   return (
-    <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll'>
+    <div className='w-full col-span-1 relative lg:h-[85vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll'>
         <h1>Recent Readings</h1>
         <ul>
             {data.map((order, id) => (
