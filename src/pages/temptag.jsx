@@ -5,9 +5,10 @@ export default function App() {
     const [dataa, setDataa] = useState([])
 
     useEffect(() => {
-        axios.get('/api/payload')
+        axios.get('/api/payloadv3')
         .then((result) => {
-            console.log("Getting data from server ::::",result.data[0].payload)
+            console.log("Getting data from server ::::",result.data)
+            const payloadData = result.data
             setDataa(result.data)
 
         }).catch((err) => {
@@ -35,15 +36,15 @@ return (
         <tbody>
             {dataa.map((item) => (
             <tr key={item.timeStamp}>
-                <td class="border border-slate-300 ...">{item.timeStamp}</td>
-                <td class="border border-slate-300 ...">{item.payload.latitude}</td>
-                <td class="border border-slate-300 ...">{item.payload.temperature}</td>
-                <td class="border border-slate-300 ...">{item.payload.relativeHumidity}</td>
-                <td class="border border-slate-300 ...">{item.payload.pressure}</td>
-                <td class="border border-slate-300 ...">{item.payload.soundLevels}</td>
-                <td class="border border-slate-300 ...">{item.payload.deviceId}</td>
-                <td class="border border-slate-300 ...">{item.payload.longitude}</td>
-                <td class="border border-slate-300 ...">{item.payload.airQualityIndex}</td>
+                <td class="border border-slate-300 ...">{item.timeStamp.S}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.latitude.N}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.temperature.N}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.relativeHumidity.N}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.pressure.N}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.soundLevels.N}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.deviceId.S}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.longitude.N}</td>
+                <td class="border border-slate-300 ...">{item.payload.M.airQualityIndex.N}</td>
             </tr>
             ))}
         </tbody>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.316.0",
     "@react-google-maps/api": "^2.18.1",
     "@vercel/analytics": "^0.1.11",
     "aws-sdk": "^2.1361.0",
