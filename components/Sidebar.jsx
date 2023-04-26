@@ -1,16 +1,28 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+
 import {RxSketchLogo, RxDashboard, RxPerson } from 'react-icons/rx';
 import {GiIceCube } from 'react-icons/gi';
 import {FaTemperatureLow} from 'react-icons/fa';
 import {FiSettings} from 'react-icons/fi';
 import {TbMapPins} from 'react-icons/tb';
-import {MdForest} from 'react-icons/md';
+import {SlLogout} from 'react-icons/sl';
+
+//Authenticator
+import { Amplify } from 'aws-amplify';
+
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+import awsExports from '../src/aws-exports';
+Amplify.configure(awsExports);
 
 
 const Sidebar = ({ children }) => {
   return (
+    <Authenticator>
+        {({ signOut, user }) => (
     <div className='flex'>
         <div className='fixed w-90 h-screen p-3 bg-white border-r-[1px] flex flex-col justify-between'>
             <div className='flex flex-col items-center'>
@@ -26,7 +38,7 @@ const Sidebar = ({ children }) => {
                     </div>
                 </Link>
                 
-                <span className='border-b-[2px] border-gray-200 w-full py-2'></span>
+                <span className='border-b-[2px] border-gray-200 w-full py-4'></span>
                 <Link href ='/' >
                     <div className='bg-green-600 text-white p-4 mt-8 rounded-lg inline-block' >
                         <RxDashboard size = '60'/>
@@ -34,14 +46,16 @@ const Sidebar = ({ children }) => {
                     </div>
                 </Link>
 
-                {/* <Link href ='/readings' >
-                    <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
-                        <FaTemperatureLow size = '60'/>
-                        Readings
+                 <Link href ='' >
+                    <div onClick={signOut} className='bg-red-600 text-white p-3 mt-10 rounded-lg inline-block' >
+                        <SlLogout size = '60'/>
+                        Logout
                     </div>
                 </Link>
 
-                <Link href ='/users' >
+                
+
+               {/* <Link href ='/users' >
                     <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
                         <MdForest size = '60'/>
                         Regions
@@ -68,7 +82,10 @@ const Sidebar = ({ children }) => {
         </div>
         <main className='ml-20 w-full'>{children}</main>
     </div>
-  );
+        )}
+    </Authenticator>
+  )
+  
 };
 
 export default Sidebar;

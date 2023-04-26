@@ -14,10 +14,12 @@ Amplify.configure(awsExports);
 export default function App({ Component, pageProps }) {
   return (
   <Authenticator variation="modal">
+    {({ signOut, user }) => (
     <Sidebar>
-    <Component {...pageProps} /> 
-    <Analytics />
+      <Component {...pageProps} /> 
+      <Analytics />
     </Sidebar>
+    )}
   </Authenticator>
   );
 }
