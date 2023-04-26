@@ -1,7 +1,5 @@
-import { useMemo} from 'react';
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import React, { useEffect, useState }  from "react";
-import { DynamoDB } from "aws-sdk";
+import React, { useEffect,useMemo, useState }  from "react";
 import axios from 'axios';
 
 export default function Googlemap () {
@@ -45,13 +43,15 @@ function Map() {
           {/* <Marker position={{lat: -0.897632, 36.82997663286112 lng: 36.651994}}/> */}
 
           {dataa.map((item) => (
+            
 
           <Marker
-            key={item.deviceId.S}
+            key={item.deviceId}
             lat={parseFloat(item.payload.latitude)}
             lng={parseFloat(item.payload.longitude)}
           />
-          ))}
+          ))
+          }
 
           </GoogleMap>
   
