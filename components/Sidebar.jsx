@@ -1,12 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import {RxSketchLogo, RxDashboard, RxPerson } from 'react-icons/rx';
+import { RxDashboard } from 'react-icons/rx';
 import {GiIceCube } from 'react-icons/gi';
-import {FaTemperatureLow} from 'react-icons/fa';
-import {FiSettings} from 'react-icons/fi';
-import {TbMapPins} from 'react-icons/tb';
 import {SlLogout} from 'react-icons/sl';
 
 //Authenticator
@@ -18,11 +14,10 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from '../src/aws-exports';
 Amplify.configure(awsExports);
 
-
 const Sidebar = ({ children }) => {
   return (
     <Authenticator>
-        {({ signOut, user }) => (
+        {({ signOut }) => (
     <div className='flex'>
         <div className='fixed w-90 h-screen p-3 bg-white border-r-[1px] flex flex-col justify-between'>
             <div className='flex flex-col items-center'>
@@ -52,31 +47,6 @@ const Sidebar = ({ children }) => {
                         Logout
                     </div>
                 </Link>
-
-                
-
-               {/* <Link href ='/users' >
-                    <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
-                        <MdForest size = '60'/>
-                        Regions
-                    </div>
-                </Link> */}
-
-
-
-                {/* <Link href ='/maps' >
-                    <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
-                        <TbMapPins size = '60'/>
-                        Map
-                    </div>
-                </Link>
-
-                <Link href ='/temptag' >
-                    <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
-                        <FiSettings size = '60'/>
-                    </div>
-                </Link> */}
-
 
             </div>
         </div>

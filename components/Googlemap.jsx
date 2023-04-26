@@ -20,40 +20,43 @@ export default function Googlemap () {
 }
 
 function Map() {
-
-  const [dataa, setDataa] = useState([])
+  const [dataa, setDataa] = useState([]);
 
   useEffect(() => {
-      axios.get('/api/payload')
-      .then((result) => {
-          console.log("Getting data from server ::::",result.data)
-          const payloadData = result.data
-          setDataa(result.data)
-
-      }).catch((err) => {
-          console.log(err)
-      });
-
+    axios.get("/api/payload").then((result) => {
+      console.log("Getting data from server ::::", result.data);
+      setDataa(result.data);
+    }).catch((err) => {
+      console.log(err);
+    });
   }, []);
 
-  // End of API
+  const latestData = useMemo(() => {
+    // Sort the data in descending order based on timestamp
+    const sortedData = [...dataa].sort((a, b) => b.timeStamp - a.timeStamp);
+    // Get the latest data
+    return sortedData[0];
+  }, [dataa]);
 
-  return <GoogleMap zoom={11}  center={{lat: -0.2927802831, lng: 36.82997663286112}}  mapContainerClassName='map-container'>
-
-          {/* <Marker position={{lat: -0.897632, 36.82997663286112 lng: 36.651994}}/> */}
-
-          {dataa.map((item) => (
-            
-
-          <Marker
-            key={item.deviceId}
-            lat={parseFloat(item.payload.latitude)}
-            lng={parseFloat(item.payload.longitude)}
-          />
-          ))
-          }
-
-          </GoogleMap>
-  
+  return (
+    <GoogleMap
+      zoom={11}
+      mapContainerClassName="map-container"
+      center={{
+        lat: parseFloat(latestData?.arduino?.Latitude ?? 0),
+        lng: parseFloat(latestData?.arduino?.Longitude ?? 0),
+      }}
+    >
+      {latestData && (
+        <Marker
+          position={{
+            lat: parseFloat(latestData?.arduino?.Latitude ?? 0),
+            lng: parseFloat(latestData?.arduino?.Longitude ?? 0),
+          }}
+        />
+      )}
+    </GoogleMap>
+  );
 }
+
 
