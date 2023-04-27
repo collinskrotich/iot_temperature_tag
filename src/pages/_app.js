@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+
 import Sidebar from '../../components/Sidebar';
 import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider,Theme, useTheme, View, Image } from '@aws-amplify/ui-react';
@@ -12,6 +13,7 @@ import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 import awsExports from '.././aws-exports';
+import { useState, useEffect } from 'react';
 Amplify.configure(awsExports);
 
 // Modify signin page
@@ -34,6 +36,15 @@ const components = {
   // Main function
 
 export default function App({ Component, pageProps }) {
+
+    // Loading feature
+
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+      setIsLoading(false);
+    }, []);
+
   // Modify colors
   const { tokens } = useTheme();
   const theme = {
@@ -86,7 +97,11 @@ export default function App({ Component, pageProps }) {
     },
   };
 
+
+
   return (
+    <div>
+    {isLoading ? <p>Loading...</p> : (
     <ThemeProvider theme={theme}>
   <Authenticator components={components}>
     {({ signOut, user }) => (
@@ -97,5 +112,7 @@ export default function App({ Component, pageProps }) {
     )}
   </Authenticator>
   </ThemeProvider>
+    )}
+    </div>
   );
 }
