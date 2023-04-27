@@ -22,7 +22,7 @@ const Header = () => {
         // const camelCaseUsername = user ? toCamelCase(user.username) : "";
         
     <div className='flex justify-between px-20 pt-4'>
-        <h2 className='text-xl'>Temperature Tag Dashboard</h2>
+        <h2 className='text-3xl font-bold'>Temperature Tag Dashboard</h2>
         <div className="flex flex-row">
 
         <div className='pt-1 pr-2'><h2>Welcome back, {toCamelCase(user.username) }</h2></div>

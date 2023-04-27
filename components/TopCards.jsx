@@ -2,6 +2,7 @@ import React from 'react'
 import DonutCO from './DonutCO'
 import DonutPM25 from './DonutPM25'
 import DonutCO2 from './DonutCO2'
+import {FaTemperatureLow} from 'react-icons/fa'
 
 const TopCards = () => {
   return (
@@ -32,7 +33,7 @@ const TopCards = () => {
                 <p className='text-gray-600'>Average Temperature</p>
             </div>
             <p className='bg-green-200 flex justify-center items-center p-4 rounded-lg'>
-                <span>+23%</span>
+                <span><FaTemperatureLow></FaTemperatureLow></span>
             </p>
         </div>
         <div className='lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg'>

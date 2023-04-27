@@ -16,7 +16,7 @@ const getPayload = async () => {
     };
     const payload = await dynamoClient.scan(params).promise();
     const payloadData = payload.Items
-    console.log(payloadData);
+    // console.log(payloadData);
     return payloadData;
 }
 

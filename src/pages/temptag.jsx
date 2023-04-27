@@ -8,8 +8,8 @@ export default function App() {
         axios.get('/api/payload')
         .then((result) => {
             console.log("Getting data from server ::::",result.data)
-            const payloadData = result.data
-            setDataa(result.data)
+            const sortedData = result.data.sort((a, b) => new Date(b.RecordedTime) - new Date(a.RecordedTime));
+            setDataa(sortedData);
 
         }).catch((err) => {
             console.log(err)
@@ -33,9 +33,9 @@ return (
             </tr>
         </thead>
         <tbody>
-            {dataa.map((item) => (
+            {dataa.map((item,id) => (
 
-                        <tr key={item.timeStamp}>
+                        <tr key={id}>
                         <td class="border border-slate-300 ...">{item.timeStamp}</td>
                         <td class="border border-slate-300 ...">{item.arduino.Temperature}</td>
                         <td class="border border-slate-300 ...">{item.arduino.Acceleration}</td>                       

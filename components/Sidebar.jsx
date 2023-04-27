@@ -2,8 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 
 import { RxDashboard } from 'react-icons/rx';
-import {GiIceCube } from 'react-icons/gi';
-import {SlLogout} from 'react-icons/sl';
+import { GiIceCube } from 'react-icons/gi';
+import {SlLogout} from 'react-icons/sl'; 
+import {SiBytedance} from 'react-icons/si';
 
 //Authenticator
 import { Amplify } from 'aws-amplify';
@@ -41,12 +42,21 @@ const Sidebar = ({ children }) => {
                     </div>
                 </Link>
 
+
+                <Link href ='/temptag' >
+                    <div className='bg-green-600 text-white p-3 mt-10 rounded-lg inline-block' >
+                        <SiBytedance size = '60'/>
+                        Readings
+                    </div>
+                </Link>
+
                  <Link href ='' >
                     <div onClick={signOut} className='bg-red-600 text-white p-3 mt-10 rounded-lg inline-block' >
                         <SlLogout size = '60'/>
-                        Logout
+                        Signout
                     </div>
                 </Link>
+
 
             </div>
         </div>
