@@ -12,3 +12,23 @@ body {
   width: 100%;
   height: 80vh;
 }
+.amplify-card {
+  background-color: var(--amplify-colors-background-secondary);
+}
+.amplify-card--outlined {
+  border-color: var(--amplify-colors-black);
+}
+.amplify-heading--6 {
+  color: var(--amplify-colors-brand-secondary-80);
+}
+.amplify-text {
+  color: var(--amplify-colors-neutral-80);
+}
+
+.amplify-button[data-variation='primary'] {
+  background: linear-gradient(
+    to right,
+    var(--amplify-colors-green-80),
+    var(--amplify-colors-green-60)
+  );
+}
