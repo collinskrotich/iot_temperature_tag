@@ -32,7 +32,7 @@ function Map() {
   }, []);
 
   const latestData = useMemo(() => {
-    // Sort the data in descending order based on timestamp
+    // Sort the data in descending order based on timestamp. 
     const sortedData = [...dataa].sort((a, b) => b.timeStamp - a.timeStamp);
     // Get the latest data
     return sortedData[0];

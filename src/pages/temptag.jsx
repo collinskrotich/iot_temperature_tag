@@ -20,33 +20,30 @@ export default function App() {
 return (
     <div className="pl-20">
         <table class="table-auto min-w-full text-center text-sm font-light border-separate border border-slate-400 ...">
-          <thead class="border-b font-medium dark:border-neutral-500">
-            <tr>
-            <th class="border border-slate-300 ...">timeStamp</th>
-            <th class="border border-slate-300 ...">Temperature</th>
-            <th class="border border-slate-300 ...">Acceleration</th>
-            <th class="border border-slate-300 ...">DeviceId</th>
-            <th class="border border-slate-300 ...">Humidity</th>
-            <th class="border border-slate-300 ...">Latitude</th>
-            <th class="border border-slate-300 ...">Longitude</th>
-            <th class="border border-slate-300 ...">TimeStamp</th>
-            </tr>
-        </thead>
-        <tbody>
-            {dataa.map((item,id) => (
-
-                        <tr key={id}>
-                        <td class="border border-slate-300 ...">{item.timeStamp}</td>
-                        <td class="border border-slate-300 ...">{item.arduino.Temperature}</td>
-                        <td class="border border-slate-300 ...">{item.arduino.Acceleration}</td>                       
-                        <td class="border border-slate-300 ...">{item.arduino.DeviceId}</td>
-                        <td class="border border-slate-300 ...">{item.arduino.Humidity}</td>
-                        <td class="border border-slate-300 ...">{item.arduino.Latitude}</td>
-                        <td class="border border-slate-300 ...">{item.arduino.Longitude}</td>
-                        <td class="border border-slate-300 ...">{item.arduino.TimeStamp}</td>
-                        </tr>
-            ))}
-        </tbody>
+                <thead class="border-b font-medium dark:border-neutral-500">
+                    <tr>
+                    <th class="border border-slate-300 ...">TimeStamp</th>
+                    <th class="border border-slate-300 ...">Temperature(°C)</th>
+                    <th class="border border-slate-300 ...">Acceleration(m/s)</th>
+                    <th class="border border-slate-300 ...">DeviceId</th>
+                    <th class="border border-slate-300 ...">Humidity(%)</th>
+                    <th class="border border-slate-300 ...">Latitude</th>
+                    <th class="border border-slate-300 ...">Longitude</th>
+                    </tr>
+                </thead>
+            <tbody>
+                {dataa.map((item,id) => (
+                            <tr key={id}>
+                            <td class="border border-slate-300 ...">{item.arduino.TimeStamp}</td>
+                            <td class="border border-slate-300 ...">{item.arduino.Temperature}</td>
+                            <td class="border border-slate-300 ...">{item.arduino.Acceleration}</td>                       
+                            <td class="border border-slate-300 ...">{item.arduino.DeviceId}</td>
+                            <td class="border border-slate-300 ...">{item.arduino.Humidity}</td>
+                            <td class="border border-slate-300 ...">{item.arduino.Latitude}</td>
+                            <td class="border border-slate-300 ...">{item.arduino.Longitude}</td>
+                            </tr>
+                ))}
+            </tbody>
         </table>
     </div>
 );
