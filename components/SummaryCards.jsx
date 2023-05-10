@@ -22,7 +22,7 @@ const SummaryCards = () => {
     }, []);
 
     // sort the data in descending order based on timestamp
-const sortedData = [...dataa].sort((a, b) => new Date(b.RecordedTime) - new Date(a.RecordedTime));
+const sortedData = [...dataa].sort((a, b) => new Date(b.timeStamp) - new Date(a.timeStamp));
 // get the latest data
 const latestData = sortedData.slice(0, 1)[0];
 
