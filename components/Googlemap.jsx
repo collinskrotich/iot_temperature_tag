@@ -43,15 +43,15 @@ function Map() {
       zoom={11}
       mapContainerClassName="map-container"
       center={{
-        lat: parseFloat(latestData?.arduino?.Latitude ?? 0),
-        lng: parseFloat(latestData?.arduino?.Longitude ?? 0),
+        lat: parseFloat(latestData?.arduino?.Latitude ?? -1.247361667),
+        lng: parseFloat(latestData?.arduino?.Longitude ?? 36.68587883),
       }}
     >
       {latestData && (
         <Marker
           position={{
-            lat: parseFloat(latestData?.arduino?.Latitude ?? 0),
-            lng: parseFloat(latestData?.arduino?.Longitude ?? 0),
+            lat: parseFloat(latestData?.arduino?.Latitude ?? -1.247361667),
+            lng: parseFloat(latestData?.arduino?.Longitude ?? 36.68587883),
           }}
         />
       )}

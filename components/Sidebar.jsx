@@ -27,7 +27,7 @@ const Sidebar = ({ children }) => {
                     </img>                  
                     </div>  
             
-                <Link href ='/'>
+                <Link href =''>
                     <div className='bg-gray-400 text-white p-3 rounded-lg inline-block'>
                         <GiIceCube size = '60'/>
                         IOT Cube
