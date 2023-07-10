@@ -4,8 +4,6 @@ import Sidebar from '../../components/Sidebar';
 import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider,Theme, useTheme, View, Image } from '@aws-amplify/ui-react';
 
-
-
 //Authenticator
 import { Amplify } from 'aws-amplify';
 
