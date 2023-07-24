@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import { RxDashboard } from 'react-icons/rx';
-import { GiIceCube } from 'react-icons/gi';
+import { MdDisplaySettings } from 'react-icons/md';
 import {SlLogout} from 'react-icons/sl'; 
 import {SiBytedance} from 'react-icons/si';
 
@@ -23,14 +23,14 @@ const Sidebar = ({ children }) => {
         <div className='fixed w-90 h-screen p-3 bg-white border-r-[1px] flex flex-col justify-between'>
             <div className='flex flex-col items-center'>
                 <div>
-                    <img className='pb-6'src='/../saf-logo.png' alt='safaricom-logo' width='125' height='160'>                                   
-                    </img>                  
+                    {/* <img className='pb-6'src='/../saf-logo.png' alt='safaricom-logo' width='125' height='160'>                                   
+                    </img>                   */}
                     </div>  
             
                 <Link href =''>
                     <div className='bg-gray-400 text-white p-3 rounded-lg inline-block'>
-                        <GiIceCube size = '60'/>
-                        IOT Cube
+                        <MdDisplaySettings size = '60'/>
+                        IOT Demo
                     </div>
                 </Link>
                 
