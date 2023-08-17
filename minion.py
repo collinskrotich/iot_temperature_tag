@@ -29,7 +29,7 @@ message ={
   'Temperature': "26°C",
   'Relative Humidity': "72%",
   'Air Quality Index': "13 AQI",
-  'message': "31-03-2023 Readings"
+  'message': "17-08-2023 Readings"
 }
 
 #Encoding into JSON
